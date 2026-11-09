@@ -64,6 +64,16 @@ Task2Advanced/
 переменные. JSON-ключ хранится как File: GitLab создаёт временный файл и
 передаёт его путь через `YC_SERVICE_ACCOUNT_KEY_FILE`. Закрытый SSH-ключ не нужен.
 
+Файл pipeline находится в папке задания. Чтобы GitLab его использовал,
+в **Settings → CI/CD → General pipelines → CI/CD configuration file**
+укажите путь:
+
+```text
+Task2Advanced/.gitlab-ci.yml
+```
+
+Сохраните настройку.
+
 В Settings → Repository → Branch rules проверьте, что основная ветка, обычно main, отмечена как Protected. Это необходимо для запуска plan и apply с защищёнными переменными. Для проверки Merge Request доступ к облачным ключам оставьте выключенным.
 
 В Settings → CI/CD → Runners должен быть доступен runner с поддержкой Docker-образов. Он выполняет команды pipeline и должен иметь доступ к интернету и Yandex Cloud.
