@@ -1,0 +1,64 @@
+stages:
+  - validate
+  - plan
+  - apply
+
+default:
+  image:
+    name: hashicorp/terraform:1.9.8
+    entrypoint: [""]
+  before_script:
+    - cd "$CI_PROJECT_DIR/Task2Advanced"
+
+variables:
+  TF_IN_AUTOMATION: "true"
+  TF_INPUT: "false"
+
+validate:
+  stage: validate
+  rules:
+    - when: on_success
+  script:
+    - terraform fmt -check -recursive .
+    - terraform init -backend=false -input=false -lockfile=readonly
+    - terraform validate
+
+# Deploy jobs run only on the protected default branch.
+# Protected cloud credentials are unavailable to merge request checks.
+.remote_backend:
+  resource_group: task2-state
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH && $CI_COMMIT_REF_PROTECTED == "true"'
+  before_script:
+    - cd "$CI_PROJECT_DIR/Task2Advanced"
+    - |
+      for name in TF_STATE_BUCKET TF_VAR_cloud_id TF_VAR_folder_id TF_VAR_subnet_id TF_VAR_ssh_public_key AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY YC_SERVICE_ACCOUNT_KEY_FILE; do
+        if [ -z "$(printenv "$name")" ]; then
+          echo "Missing setting: $name" >&2
+          exit 1
+        fi
+      done
+      test -f "$YC_SERVICE_ACCOUNT_KEY_FILE"
+    - terraform init -input=false -lockfile=readonly -backend-config=backend.hcl -backend-config="bucket=$TF_STATE_BUCKET"
+
+plan:
+  extends: .remote_backend
+  stage: plan
+  script:
+    - terraform plan -input=false -out=tfplan
+  artifacts:
+    paths:
+      - Task2Advanced/tfplan
+    access: developer
+    expire_in: 1 hour
+
+apply:
+  extends: .remote_backend
+  stage: apply
+  needs:
+    - job: plan
+      artifacts: true
+  when: manual
+  allow_failure: false
+  script:
+    - terraform apply -input=false tfplan
