@@ -72,7 +72,6 @@ Task2Advanced/
 Task2Advanced/.gitlab-ci.yml
 ```
 
-Сохраните настройку.
 
 В Settings → Repository → Branch rules проверьте, что основная ветка, обычно main, отмечена как Protected. Это необходимо для запуска plan и apply с защищёнными переменными. Для проверки Merge Request доступ к облачным ключам оставьте выключенным.
 
