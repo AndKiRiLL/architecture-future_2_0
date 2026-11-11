@@ -1,0 +1,385 @@
+<mxfile host="app.diagrams.net" compressed="false">
+  <diagram id="event-storming" name="Событийная схема">
+    <mxGraphModel dx="4279" dy="2298" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2060" pageHeight="2080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontColor=#111111;fontSize=22;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Будущее 2.0 — событийная схема (аналог Event Storming)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="2000" x="30" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=15;align=center;verticalAlign=middle;spacing=10;" value="Синий — команда; жёлтый — агрегат; оранжевый — состоявшееся событие; фиолетовый — подписчик и его реакция. Источник отвечает за подтверждение факта." vertex="1">
+          <mxGeometry height="50" width="2000" x="30" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="header_source" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=16;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Контекст-источник&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="240" x="30" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="header_command" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=16;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Команда&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="310" x="310" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="header_aggregate" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=16;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Агрегат&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="240" x="660" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="header_event" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=16;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Доменное событие&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="390" x="940" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="header_subscriber" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=16;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Подписчик / реакция&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="650" x="1370" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="E01_source" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;BC-01 · PAT&lt;/b&gt;&lt;br&gt;Пациенты" vertex="1">
+          <mxGeometry height="100" width="240" x="30" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="E01_command" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="Зарегистрировать пациента" vertex="1">
+          <mxGeometry height="100" width="310" x="310" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="E01_aggregate" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Patient&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="660" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="E01_event" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;E01 · PatientRegistered&lt;/b&gt;&lt;br&gt;Зарегистрирован пациент" vertex="1">
+          <mxGeometry height="100" width="390" x="940" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="E01_subscriber" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="CARE — обновить проекцию ID и статуса пациента" vertex="1">
+          <mxGeometry height="100" width="650" x="1370" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="E01_source_command" edge="1" parent="1" source="E01_source" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E01_command" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E01_command_aggregate" edge="1" parent="1" source="E01_command" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E01_aggregate" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E01_aggregate_event" edge="1" parent="1" source="E01_aggregate" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E01_event" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E01_event_subscriber" edge="1" parent="1" source="E01_event" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E01_subscriber" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E02_source" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;BC-02 · CARE&lt;/b&gt;&lt;br&gt;Приёмы и исследования" vertex="1">
+          <mxGeometry height="100" width="240" x="30" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="E02_command" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="Направить исследование в ИИ" vertex="1">
+          <mxGeometry height="100" width="310" x="310" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="E02_aggregate" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Study&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="660" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="E02_event" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;E02 · StudyRequested&lt;/b&gt;&lt;br&gt;Назначена обработка исследования" vertex="1">
+          <mxGeometry height="100" width="390" x="940" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="E02_subscriber" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="AI — создать задание анализа" vertex="1">
+          <mxGeometry height="100" width="650" x="1370" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="E02_source_command" edge="1" parent="1" source="E02_source" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E02_command" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E02_command_aggregate" edge="1" parent="1" source="E02_command" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E02_aggregate" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E02_aggregate_event" edge="1" parent="1" source="E02_aggregate" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E02_event" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E02_event_subscriber" edge="1" parent="1" source="E02_event" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E02_subscriber" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E03_source" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;BC-03 · AI&lt;/b&gt;&lt;br&gt;Обработка ИИ" vertex="1">
+          <mxGeometry height="100" width="240" x="30" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="E03_command" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="Завершить задание и сохранить результат" vertex="1">
+          <mxGeometry height="100" width="310" x="310" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="E03_aggregate" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;AnalysisTask&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="660" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="E03_event" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;E03 · AIAnalysisCompleted&lt;/b&gt;&lt;br&gt;Исследование обработано ИИ" vertex="1">
+          <mxGeometry height="100" width="390" x="940" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="E03_subscriber" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="CARE — связать результат с исследованием" vertex="1">
+          <mxGeometry height="100" width="650" x="1370" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="E03_source_command" edge="1" parent="1" source="E03_source" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E03_command" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E03_command_aggregate" edge="1" parent="1" source="E03_command" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E03_aggregate" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E03_aggregate_event" edge="1" parent="1" source="E03_aggregate" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E03_event" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E03_event_subscriber" edge="1" parent="1" source="E03_event" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E03_subscriber" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E04_source" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;BC-02 · CARE&lt;/b&gt;&lt;br&gt;Приёмы и исследования" vertex="1">
+          <mxGeometry height="100" width="240" x="30" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="E04_command" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="Завершить приём" vertex="1">
+          <mxGeometry height="100" width="310" x="310" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="E04_aggregate" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Visit&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="660" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="E04_event" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;E04 · ClinicVisitCounted&lt;/b&gt;&lt;br&gt;Учтено посещение клиники" vertex="1">
+          <mxGeometry height="100" width="390" x="940" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="E04_subscriber" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="ANA — обновить число посещений" vertex="1">
+          <mxGeometry height="100" width="650" x="1370" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="E04_source_command" edge="1" parent="1" source="E04_source" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E04_command" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E04_command_aggregate" edge="1" parent="1" source="E04_command" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E04_aggregate" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E04_aggregate_event" edge="1" parent="1" source="E04_aggregate" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E04_event" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E04_event_subscriber" edge="1" parent="1" source="E04_event" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E04_subscriber" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E05_source" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;BC-02 · CARE&lt;/b&gt;&lt;br&gt;Приёмы и исследования" vertex="1">
+          <mxGeometry height="100" width="240" x="30" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="E05_command" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="Завершить приём и зафиксировать начисление" vertex="1">
+          <mxGeometry height="100" width="310" x="310" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="E05_aggregate" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Visit&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="660" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="E05_event" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;E05 · ServiceChargeCreated&lt;/b&gt;&lt;br&gt;Создано начисление за услугу" vertex="1">
+          <mxGeometry height="100" width="390" x="940" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="E05_subscriber" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="BILL — создать позицию черновика счёта" vertex="1">
+          <mxGeometry height="100" width="650" x="1370" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="E05_source_command" edge="1" parent="1" source="E05_source" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E05_command" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E05_command_aggregate" edge="1" parent="1" source="E05_command" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E05_aggregate" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E05_aggregate_event" edge="1" parent="1" source="E05_aggregate" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E05_event" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E05_event_subscriber" edge="1" parent="1" source="E05_event" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E05_subscriber" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E06_source" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;BC-06 · BILL&lt;/b&gt;&lt;br&gt;Начисления и счета" vertex="1">
+          <mxGeometry height="100" width="240" x="30" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="E06_command" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="Выставить счёт на оплату" vertex="1">
+          <mxGeometry height="100" width="310" x="310" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="E06_aggregate" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Invoice&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="660" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="E06_event" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;E06 · InvoiceIssued&lt;/b&gt;&lt;br&gt;Выставлен счёт на оплату" vertex="1">
+          <mxGeometry height="100" width="390" x="940" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="E06_subscriber" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="ACC — подготовить поручение без списания; ANA — обновить финансовую витрину" vertex="1">
+          <mxGeometry height="100" width="650" x="1370" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="E06_source_command" edge="1" parent="1" source="E06_source" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E06_command" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E06_command_aggregate" edge="1" parent="1" source="E06_command" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E06_aggregate" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E06_aggregate_event" edge="1" parent="1" source="E06_aggregate" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E06_event" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E06_event_subscriber" edge="1" parent="1" source="E06_event" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E06_subscriber" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E07_source" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;BC-04 · LEND&lt;/b&gt;&lt;br&gt;Кредитование" vertex="1">
+          <mxGeometry height="100" width="240" x="30" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="E07_command" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="Создать кредитный договор" vertex="1">
+          <mxGeometry height="100" width="310" x="310" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="E07_aggregate" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;LoanAgreement&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="660" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="E07_event" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;E07 · LoanAgreementCreated&lt;/b&gt;&lt;br&gt;Создан кредитный договор" vertex="1">
+          <mxGeometry height="100" width="390" x="940" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="E07_subscriber" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="ACC — подготовить данные обслуживания; ANA — учесть созданный договор, не выдачу кредита" vertex="1">
+          <mxGeometry height="100" width="650" x="1370" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="E07_source_command" edge="1" parent="1" source="E07_source" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E07_command" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E07_command_aggregate" edge="1" parent="1" source="E07_command" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E07_aggregate" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E07_aggregate_event" edge="1" parent="1" source="E07_aggregate" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E07_event" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E07_event_subscriber" edge="1" parent="1" source="E07_event" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E07_subscriber" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E08_source" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;BC-05 · ACC&lt;/b&gt;&lt;br&gt;Счета и расчёты" vertex="1">
+          <mxGeometry height="100" width="240" x="30" y="1075" as="geometry" />
+        </mxCell>
+        <mxCell id="E08_command" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="Открыть банковский счёт" vertex="1">
+          <mxGeometry height="100" width="310" x="310" y="1075" as="geometry" />
+        </mxCell>
+        <mxCell id="E08_aggregate" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Account&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="660" y="1075" as="geometry" />
+        </mxCell>
+        <mxCell id="E08_event" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;E08 · AccountOpened&lt;/b&gt;&lt;br&gt;Открыт банковский счёт" vertex="1">
+          <mxGeometry height="100" width="390" x="940" y="1075" as="geometry" />
+        </mxCell>
+        <mxCell id="E08_subscriber" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="LEND — обновить доступные счета клиента; ANA — обновить финансовые показатели" vertex="1">
+          <mxGeometry height="100" width="650" x="1370" y="1075" as="geometry" />
+        </mxCell>
+        <mxCell id="E08_source_command" edge="1" parent="1" source="E08_source" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E08_command" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E08_command_aggregate" edge="1" parent="1" source="E08_command" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E08_aggregate" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E08_aggregate_event" edge="1" parent="1" source="E08_aggregate" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E08_event" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E08_event_subscriber" edge="1" parent="1" source="E08_event" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E08_subscriber" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E09_source" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;BC-05 · ACC&lt;/b&gt;&lt;br&gt;Счета и расчёты" vertex="1">
+          <mxGeometry height="100" width="240" x="30" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="E09_command" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="Подтвердить исполненный платёж" vertex="1">
+          <mxGeometry height="100" width="310" x="310" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="E09_aggregate" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Account&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="660" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="E09_event" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;E09 · PaymentCompleted&lt;/b&gt;&lt;br&gt;Исполнен платёж" vertex="1">
+          <mxGeometry height="100" width="390" x="940" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="E09_subscriber" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="BILL — учесть оплату invoice_id; LEND — учесть платёж loan_id; ANA — обновить показатели" vertex="1">
+          <mxGeometry height="100" width="650" x="1370" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="E09_source_command" edge="1" parent="1" source="E09_source" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E09_command" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E09_command_aggregate" edge="1" parent="1" source="E09_command" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E09_aggregate" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E09_aggregate_event" edge="1" parent="1" source="E09_aggregate" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E09_event" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E09_event_subscriber" edge="1" parent="1" source="E09_event" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E09_subscriber" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E10_source" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;BC-07 · HR&lt;/b&gt;&lt;br&gt;Кадровый учёт" vertex="1">
+          <mxGeometry height="100" width="240" x="30" y="1325" as="geometry" />
+        </mxCell>
+        <mxCell id="E10_command" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="Оформить приём сотрудника" vertex="1">
+          <mxGeometry height="100" width="310" x="310" y="1325" as="geometry" />
+        </mxCell>
+        <mxCell id="E10_aggregate" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Employee&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="660" y="1325" as="geometry" />
+        </mxCell>
+        <mxCell id="E10_event" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;E10 · EmployeeHired&lt;/b&gt;&lt;br&gt;Принят сотрудник" vertex="1">
+          <mxGeometry height="100" width="390" x="940" y="1325" as="geometry" />
+        </mxCell>
+        <mxCell id="E10_subscriber" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="INV — подготовить заявку на имущество; ANA — обновить кадровую витрину" vertex="1">
+          <mxGeometry height="100" width="650" x="1370" y="1325" as="geometry" />
+        </mxCell>
+        <mxCell id="E10_source_command" edge="1" parent="1" source="E10_source" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E10_command" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E10_command_aggregate" edge="1" parent="1" source="E10_command" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E10_aggregate" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E10_aggregate_event" edge="1" parent="1" source="E10_aggregate" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E10_event" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E10_event_subscriber" edge="1" parent="1" source="E10_event" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E10_subscriber" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E11_source" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;BC-08 · INV&lt;/b&gt;&lt;br&gt;Складской учёт" vertex="1">
+          <mxGeometry height="100" width="240" x="30" y="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="E11_command" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="Подтвердить выдачу имущества" vertex="1">
+          <mxGeometry height="100" width="310" x="310" y="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="E11_aggregate" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;StockItem&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="660" y="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="E11_event" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;E11 · InventoryItemIssued&lt;/b&gt;&lt;br&gt;Выдано имущество" vertex="1">
+          <mxGeometry height="100" width="390" x="940" y="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="E11_subscriber" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="HR — обновить закреплённое имущество; ANA — учесть движение запасов" vertex="1">
+          <mxGeometry height="100" width="650" x="1370" y="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="E11_source_command" edge="1" parent="1" source="E11_source" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E11_command" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E11_command_aggregate" edge="1" parent="1" source="E11_command" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E11_aggregate" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E11_aggregate_event" edge="1" parent="1" source="E11_aggregate" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E11_event" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E11_event_subscriber" edge="1" parent="1" source="E11_event" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E11_subscriber" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E12_source" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;BC-09 · PHARM&lt;/b&gt;&lt;br&gt;Фармацевтические поставки" vertex="1">
+          <mxGeometry height="100" width="240" x="30" y="1575" as="geometry" />
+        </mxCell>
+        <mxCell id="E12_command" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="Подтвердить приёмку поставки" vertex="1">
+          <mxGeometry height="100" width="310" x="310" y="1575" as="geometry" />
+        </mxCell>
+        <mxCell id="E12_aggregate" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;SupplyOrder&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="660" y="1575" as="geometry" />
+        </mxCell>
+        <mxCell id="E12_event" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;E12 · PharmaDeliveryAccepted&lt;/b&gt;&lt;br&gt;Принята фармацевтическая поставка" vertex="1">
+          <mxGeometry height="100" width="390" x="940" y="1575" as="geometry" />
+        </mxCell>
+        <mxCell id="E12_subscriber" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="INV — оприходовать строки без повторов; ANA — учесть объём поставки" vertex="1">
+          <mxGeometry height="100" width="650" x="1370" y="1575" as="geometry" />
+        </mxCell>
+        <mxCell id="E12_source_command" edge="1" parent="1" source="E12_source" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E12_command" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E12_command_aggregate" edge="1" parent="1" source="E12_command" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E12_aggregate" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E12_aggregate_event" edge="1" parent="1" source="E12_aggregate" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E12_event" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E12_event_subscriber" edge="1" parent="1" source="E12_event" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E12_subscriber" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E13_source" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;BC-10 · EQUIP&lt;/b&gt;&lt;br&gt;Управление оборудованием" vertex="1">
+          <mxGeometry height="100" width="240" x="30" y="1700" as="geometry" />
+        </mxCell>
+        <mxCell id="E13_command" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="Изменить эксплуатационный статус" vertex="1">
+          <mxGeometry height="100" width="310" x="310" y="1700" as="geometry" />
+        </mxCell>
+        <mxCell id="E13_aggregate" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Device&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="660" y="1700" as="geometry" />
+        </mxCell>
+        <mxCell id="E13_event" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;E13 · DeviceStatusChanged&lt;/b&gt;&lt;br&gt;Изменён статус оборудования" vertex="1">
+          <mxGeometry height="100" width="390" x="940" y="1700" as="geometry" />
+        </mxCell>
+        <mxCell id="E13_subscriber" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;" value="CARE — обновить доступность; INV — справочный статус; ANA — показатели оборудования" vertex="1">
+          <mxGeometry height="100" width="650" x="1370" y="1700" as="geometry" />
+        </mxCell>
+        <mxCell id="E13_source_command" edge="1" parent="1" source="E13_source" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E13_command" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E13_command_aggregate" edge="1" parent="1" source="E13_command" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E13_aggregate" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E13_aggregate_event" edge="1" parent="1" source="E13_aggregate" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E13_event" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="E13_event_subscriber" edge="1" parent="1" source="E13_event" style="rounded=1;html=1;whiteSpace=wrap;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontSize=12;fontColor=#111111;labelBackgroundColor=#FFFFFF;labelWidth=145;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="E13_subscriber" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="notes" parent="1" style="rounded=1;arcSize=5;whiteSpace=wrap;html=1;fillColor=#FFFFDD;strokeColor=#999977;fontColor=#111111;fontSize=14;align=center;verticalAlign=middle;spacing=10;align=left;spacing=14;" value="&lt;b&gt;Ограничения и смысл событий&lt;/b&gt;&lt;br&gt;Строки показывают отдельные факты, а не автоматическое выполнение всех команд подряд. E04 и E05 возникают при одном завершении приёма. E06 и E07 не разрешают списание или выдачу денег: платёж требует отдельной авторизованной команды.&lt;br&gt;&lt;br&gt;E01–E03 — закрытый медицинский поток PAT / CARE / AI, недоступный ANA. В E04 нет ID пациента и медицинских сведений. В E05 нет медицинских документов, но доступ разрешён только BILL." vertex="1">
+          <mxGeometry height="165" width="1990" x="30" y="1865" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
