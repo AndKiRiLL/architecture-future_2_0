@@ -1,0 +1,18 @@
+body { font-family: Roboto, Arial, sans-serif; }
+
+/* Легенда под графиком: подписи колец и категорий остаются читаемыми. */
+@media (min-width: 768px) {
+  body [class^="Radar_radar"] { margin-bottom: 90px; }
+  body [class^="Legend_legend"] {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: -65px;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+  }
+}

@@ -1,0 +1,563 @@
+<mxfile host="app.diagrams.net" compressed="false">
+  <diagram id="containers" name="C4 Container">
+    <mxGraphModel dx="2977" dy="1599" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="3200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-1" parent="1" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#111111;whiteSpace=wrap;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" value="Будущее 2.0 — C4 Container — целевое состояние через 3 года" vertex="1">
+          <mxGeometry height="38" width="1803" x="1238.2857142857138" y="786" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-2" parent="1" style="rounded=0;html=1;whiteSpace=wrap;fillColor=none;strokeColor=#666666;fontColor=#111111;dashed=1;dashPattern=7 5;align=center;verticalAlign=top;spacingTop=6;fontSize=14;container=1;collapsible=0;recursiveResize=0;" value="&lt;b&gt;Будущее 2.0 — облачная платформа&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Enterprise]&lt;/span&gt;" vertex="1">
+          <mxGeometry height="2732" width="1477.54" x="1569.2857142857138" y="830.3" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-3" parent="EcS-RkK1EQF9on6ugeKv-2" style="rounded=0;html=1;whiteSpace=wrap;fillColor=none;strokeColor=#666666;fontColor=#111111;dashed=1;dashPattern=7 5;align=center;verticalAlign=top;spacingTop=6;fontSize=14;container=1;collapsible=0;recursiveResize=0;" value="&lt;b&gt;Медицинский домен&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[System]&lt;/span&gt;" vertex="1">
+          <mxGeometry height="410.89" width="1053.73" x="24" y="935" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-4" parent="EcS-RkK1EQF9on6ugeKv-3" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#438DD5;strokeColor=#3C7FC0;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Интерфейс клиники&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: Web]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Замена PowerBuilder&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85.19" width="207.14" x="16" y="108.5" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-5" parent="EcS-RkK1EQF9on6ugeKv-3" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#438DD5;strokeColor=#3C7FC0;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Медицинский сервис&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: Python API]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Лечение, исследования, посещения; ФЛК&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120.11" width="209.14" x="412.5" y="248" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-6" parent="EcS-RkK1EQF9on6ugeKv-3" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#438DD5;strokeColor=#3C7FC0;strokeWidth=1;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Медицинская БД&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: PostgreSQL]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Карты и истории болезни; закрытый доступ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="240" x="801.73" y="238.89" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-7" parent="EcS-RkK1EQF9on6ugeKv-3" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#438DD5;strokeColor=#3C7FC0;strokeWidth=1;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Снимки и файлы исследований&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: Object Storage]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Закрытое медицинское хранилище&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="240" x="801.4" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-8" parent="EcS-RkK1EQF9on6ugeKv-2" style="rounded=0;html=1;whiteSpace=wrap;fillColor=none;strokeColor=#666666;fontColor=#111111;dashed=1;dashPattern=7 5;align=center;verticalAlign=top;spacingTop=6;fontSize=14;container=1;collapsible=0;recursiveResize=0;" value="&lt;b&gt;Финтех-домен&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[System]&lt;/span&gt;" vertex="1">
+          <mxGeometry height="348" width="644.55" x="28.5" y="59" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-9" parent="EcS-RkK1EQF9on6ugeKv-8" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#438DD5;strokeColor=#3C7FC0;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Финтех API&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: Go]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Счета и кредиты&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85.19" width="145.34" x="42.5" y="51.5" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-10" parent="EcS-RkK1EQF9on6ugeKv-8" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#438DD5;strokeColor=#3C7FC0;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Финансовые расчёты&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: Java]&lt;/span&gt;&lt;br&gt;&lt;br&gt;ФЛК и правила расчётов; обработка событий&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120.11" width="198.08" x="16" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-11" parent="EcS-RkK1EQF9on6ugeKv-8" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#438DD5;strokeColor=#3C7FC0;strokeWidth=1;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Финансовая БД&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: PostgreSQL]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Операционные данные банка&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="240" x="392.55" y="82.24" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-12" parent="EcS-RkK1EQF9on6ugeKv-2" style="rounded=0;html=1;whiteSpace=wrap;fillColor=none;strokeColor=#666666;fontColor=#111111;dashed=1;dashPattern=7 5;align=center;verticalAlign=top;spacingTop=6;fontSize=14;container=1;collapsible=0;recursiveResize=0;" value="&lt;b&gt;Корпоративный домен&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[System]&lt;/span&gt;" vertex="1">
+          <mxGeometry height="216" width="628.81" x="44" y="627" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-13" parent="EcS-RkK1EQF9on6ugeKv-12" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#438DD5;strokeColor=#3C7FC0;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Корпоративный сервис&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: Java]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Персонал, склад, финансы; ФЛК&lt;/div&gt;" vertex="1">
+          <mxGeometry height="136.41" width="167.16" x="16" y="51" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-14" parent="EcS-RkK1EQF9on6ugeKv-12" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#438DD5;strokeColor=#3C7FC0;strokeWidth=1;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Корпоративная БД&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: PostgreSQL]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Данные головного офиса и клиник&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="240" x="376.81" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-15" parent="EcS-RkK1EQF9on6ugeKv-2" style="rounded=0;html=1;whiteSpace=wrap;fillColor=none;strokeColor=#666666;fontColor=#111111;dashed=1;dashPattern=7 5;align=center;verticalAlign=top;spacingTop=6;fontSize=14;container=1;collapsible=0;recursiveResize=0;" value="&lt;b&gt;Домен ИИ&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[System]&lt;/span&gt;" vertex="1">
+          <mxGeometry height="216" width="710.27" x="28.5" y="1967" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-16" parent="EcS-RkK1EQF9on6ugeKv-15" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#438DD5;strokeColor=#3C7FC0;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;ИИ-сервис&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: Python]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Асинхронная обработка медицинских исследований&lt;/div&gt;" vertex="1">
+          <mxGeometry height="117.78" width="198.08" x="16" y="51" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-17" parent="EcS-RkK1EQF9on6ugeKv-15" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#438DD5;strokeColor=#3C7FC0;strokeWidth=1;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Задания ИИ&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: PostgreSQL]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Статусы, ID и outbox; без содержимого исследований&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="240" x="452.21" y="44" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-18" parent="EcS-RkK1EQF9on6ugeKv-2" style="rounded=0;html=1;whiteSpace=wrap;fillColor=none;strokeColor=#666666;fontColor=#111111;dashed=1;dashPattern=7 5;align=center;verticalAlign=top;spacingTop=6;fontSize=14;container=1;collapsible=0;recursiveResize=0;" value="&lt;b&gt;Новый фармацевтический домен&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[System]&lt;/span&gt;" vertex="1">
+          <mxGeometry height="231" width="710.27" x="27.5" y="2204" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-19" parent="EcS-RkK1EQF9on6ugeKv-18" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#438DD5;strokeColor=#3C7FC0;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Фармацевтический сервис&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: Java API]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Поставки; адаптер API; ФЛК и пакетные преобразования&lt;/div&gt;" vertex="1">
+          <mxGeometry height="136.41" width="199.91" x="16" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-20" parent="EcS-RkK1EQF9on6ugeKv-18" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#438DD5;strokeColor=#3C7FC0;strokeWidth=1;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Данные фармацевтического домена&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: PostgreSQL]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Собственное операционное хранилище&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="240" x="453.21000000000004" y="48.410000000000004" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-21" parent="EcS-RkK1EQF9on6ugeKv-2" style="rounded=0;html=1;whiteSpace=wrap;fillColor=none;strokeColor=#666666;fontColor=#111111;dashed=1;dashPattern=7 5;align=center;verticalAlign=top;spacingTop=6;fontSize=14;container=1;collapsible=0;recursiveResize=0;" value="&lt;b&gt;Новый домен оборудования&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[System]&lt;/span&gt;" vertex="1">
+          <mxGeometry height="216.2" width="641.7" x="31.5" y="2495" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-22" parent="EcS-RkK1EQF9on6ugeKv-21" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#438DD5;strokeColor=#3C7FC0;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Сервис оборудования&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: Java API]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Учёт устройств; адаптер API; ФЛК и пакетные преобразования&lt;/div&gt;" vertex="1">
+          <mxGeometry height="136.41" width="192.2" x="16" y="51" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-23" parent="EcS-RkK1EQF9on6ugeKv-21" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#438DD5;strokeColor=#3C7FC0;strokeWidth=1;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Данные оборудования&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: PostgreSQL]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Собственное операционное хранилище&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="240" x="389.7" y="44.2" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-24" parent="EcS-RkK1EQF9on6ugeKv-2" style="rounded=0;html=1;whiteSpace=wrap;fillColor=none;strokeColor=#666666;fontColor=#111111;dashed=1;dashPattern=7 5;align=center;verticalAlign=top;spacingTop=6;fontSize=14;container=1;collapsible=0;recursiveResize=0;" value="&lt;b&gt;Общая событийная и аналитическая платформа&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[System]&lt;/span&gt;" vertex="1">
+          <mxGeometry height="588.2" width="1035.04" x="430.5" y="1358" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-25" parent="EcS-RkK1EQF9on6ugeKv-24" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#438DD5;strokeColor=#3C7FC0;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Платформа событий&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: Kafka]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Доменные топики, ACL и подписки; маршрутизация и DLQ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="136.41" width="188.62" x="16" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-26" parent="EcS-RkK1EQF9on6ugeKv-24" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#438DD5;strokeColor=#3C7FC0;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Каталог схем&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: Schema Registry]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Версии и совместимость контрактов событий&lt;/div&gt;" vertex="1">
+          <mxGeometry height="101.48" width="202.87" x="801.5" y="51.5" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-27" parent="EcS-RkK1EQF9on6ugeKv-24" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#438DD5;strokeColor=#3C7FC0;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Обработка аналитических событий&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: Python consumers]&lt;/span&gt;&lt;br&gt;&lt;br&gt;ФЛК аналитических событий; нормализация; дедупликация&lt;/div&gt;" vertex="1">
+          <mxGeometry height="155.03" width="182.79" x="423.5" y="170.5" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-28" parent="EcS-RkK1EQF9on6ugeKv-24" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#438DD5;strokeColor=#3C7FC0;strokeWidth=1;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Аналитические витрины&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: ClickHouse]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Раздельные доменные наборы и согласованные общие показатели&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="240" x="783.04" y="416.2" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-29" parent="EcS-RkK1EQF9on6ugeKv-24" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#438DD5;strokeColor=#3C7FC0;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Портал самообслуживания&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: Apache Superset]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Готовые отчёты и конструктор; роли и фильтры строк&lt;/div&gt;" vertex="1">
+          <mxGeometry height="136.41" width="198.74" x="415.5" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-30" parent="EcS-RkK1EQF9on6ugeKv-24" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#438DD5;strokeColor=#3C7FC0;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Единая авторизация&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: Keycloak / OIDC]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Вход пользователей и роли&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120.11" width="185.32" x="810.5" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-31" parent="EcS-RkK1EQF9on6ugeKv-2" style="shape=note;size=15;html=1;whiteSpace=wrap;fillColor=#FFFFDD;strokeColor=#999977;fontColor=#111111;fontSize=13;align=left;verticalAlign=top;spacing=12;" value="&lt;b&gt;Ключевые изменения за три года&lt;/b&gt;&lt;br&gt;&lt;br&gt;SQL Server 2008 → доменные PostgreSQL и аналитические витрины ClickHouse.&lt;br&gt;&lt;br&gt;PowerBuilder → web-интерфейс клиники.&lt;br&gt;&lt;br&gt;Power BI → портал Superset с готовыми отчётами и конструктором.&lt;br&gt;&lt;br&gt;&lt;b&gt;Перенос функций ESB (Camel)&lt;/b&gt;&lt;br&gt;ФЛК (форматно-логический контроль) и бизнес-правила → доменные сервисы, до записи данных.&lt;br&gt;Внешние форматы и протоколы, справочные коды → адаптеры этих сервисов.&lt;br&gt;Пакетные преобразования → задания на Python или Java по стеку домена; разрешённые факты публикуются в Kafka.&lt;br&gt;Потоковые преобразования для витрин → Python-обработчики аналитических событий.&lt;br&gt;Доставка и подписки → Kafka; бизнес-условия маршрутизации → доменные обработчики.&lt;br&gt;Camel остаётся мостом совместимости при миграции. Старый маршрут отключается после переноса его проверок, преобразований и правил.&lt;br&gt;&lt;br&gt;&lt;b&gt;Данные и доступ&lt;/b&gt;&lt;br&gt;&lt;br&gt;Карты, истории болезни, результаты исследований и снимки остаются в медицинском домене. Они не поступают в витрины. Для аналитики разрешены только утверждённые поля и топики. Медицинские топики закрыты для аналитики правами доступа Kafka (ACL). Портал ограничивает наборы и строки по ролям.&lt;br&gt;&lt;br&gt;&lt;b&gt;Масштабирование&lt;/b&gt;&lt;br&gt;&lt;br&gt;Фармацевтика и оборудование получают собственные сервисы и БД. Kafka масштабируется партициями, обработчики — группами потребителей, ClickHouse — ресурсами и шардами. Для двух-трёх новых регионов отдельно согласуются хранение и передача данных.&lt;br&gt;&lt;br&gt;&lt;b&gt;Надёжность&lt;/b&gt;&lt;br&gt;&lt;br&gt;Outbox, идемпотентные потребители, Schema Registry и DLQ. Критичные сервисы распределены по зонам; резервные копии проверяются восстановлением. Обработка ИИ не блокирует приём пациента.&lt;br&gt;&lt;br&gt;&lt;b&gt;Этапы&lt;/b&gt;&lt;br&gt;&lt;br&gt;0–6 месяцев: домены и пилот. До 12 месяцев: портал основных доменов. 6–18 месяцев: потоковые витрины и адаптеры legacy. 18–36 месяцев: завершение переноса и отключение SQL Server 2008, PowerBuilder и Camel после сверки и сохранения обязательных архивов." vertex="1">
+          <mxGeometry height="740" width="625" x="779" y="75.7" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-32" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#08427B;strokeColor=#073B6F;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Оператор клиники&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Person]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Работает с пациентами&lt;/div&gt;" vertex="1">
+          <mxGeometry height="119.22" width="194.84" x="1239.2857142857138" y="1856.8" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-33" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#08427B;strokeColor=#073B6F;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Бизнес-пользователь&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Person]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Строит отчёты в пределах доступа&lt;/div&gt;" vertex="1">
+          <mxGeometry height="135.52" width="217.79" x="2259.995714285714" y="3590" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-34" parent="1" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#999999;strokeColor=#888888;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Системы партнёров&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[External System]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Фармкомпании и производитель оборудования&lt;/div&gt;" vertex="1">
+          <mxGeometry height="103.81" width="202.73" x="1235.2857142857138" y="3273.3" as="geometry" />
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-35" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-32" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.4991;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.4989;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-4" value="&lt;b&gt;Работает&lt;/b&gt;&lt;br&gt;&lt;i&gt;HTTPS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-0.26" y="-15.88" as="offset" />
+            <Array as="points">
+              <mxPoint x="1467.2557142857138" y="1916.3" />
+              <mxPoint x="1500.6757142857136" y="1916.3" />
+              <mxPoint x="1534.4357142857139" y="1916.3" />
+              <mxPoint x="1568.0757142857137" y="1916.3" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-36" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-4" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.9771;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.1328;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-5" value="&lt;b&gt;Вызывает медицинские операции&lt;/b&gt;&lt;br&gt;&lt;i&gt;HTTPS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1.64" y="-46.75" as="offset" />
+            <Array as="points">
+              <mxPoint x="1852.0857142857137" y="1971.2" />
+              <mxPoint x="1888.7857142857138" y="1985.77" />
+              <mxPoint x="1925.8357142857137" y="2000.47" />
+              <mxPoint x="1962.5757142857137" y="2015.05" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-37" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-5" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.5231;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.4801;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-6" value="&lt;b&gt;Читает и записывает&lt;/b&gt;&lt;br&gt;&lt;i&gt;SQL / TLS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1.33" y="-23.49" as="offset" />
+            <Array as="points">
+              <mxPoint x="2255.085714285714" y="2077.23" />
+              <mxPoint x="2296.5357142857138" y="2078.3599999999997" />
+              <mxPoint x="2338.165714285714" y="2079.5" />
+              <mxPoint x="2378.8557142857135" y="2080.6099999999997" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-38" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-5" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.0879;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.8836;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-7" value="&lt;b&gt;Хранит файлы&lt;/b&gt;&lt;br&gt;&lt;i&gt;S3 / HTTPS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5.31" y="-43.95" as="offset" />
+            <Array as="points">
+              <mxPoint x="2253.2757142857135" y="2005.57" />
+              <mxPoint x="2292.8857142857137" y="1986.67" />
+              <mxPoint x="2332.8157142857135" y="1967.63" />
+              <mxPoint x="2372.1157142857137" y="1948.88" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-39" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-16" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.5115;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.4899;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-17" value="&lt;b&gt;Задания и outbox&lt;/b&gt;&lt;br&gt;&lt;i&gt;SQL / TLS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3.46" y="-23.32" as="offset" />
+            <Array as="points">
+              <mxPoint x="1848.3657142857137" y="2909" />
+              <mxPoint x="1886.145714285714" y="2909.48" />
+              <mxPoint x="1924.4057142857137" y="2909.96" />
+              <mxPoint x="1962.355714285714" y="2910.44" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-40" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-4" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=0.8508;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.0735;entryY=0.0000;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-30" value="&lt;b&gt;Вход оператора&lt;/b&gt;&lt;br&gt;&lt;i&gt;OIDC / HTTPS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-212.59" y="-60.42" as="offset" />
+            <Array as="points">
+              <mxPoint x="1913.4857142857138" y="1809.06" />
+              <mxPoint x="2082.665714285714" y="1743.1100000000001" />
+              <mxPoint x="2272.935714285714" y="1700.06" />
+              <mxPoint x="2464.185714285714" y="1704.0700000000002" />
+              <mxPoint x="2636.2857142857138" y="1779.3" />
+              <mxPoint x="2688.715714285714" y="1862.34" />
+              <mxPoint x="2721.1457142857134" y="1992.12" />
+              <mxPoint x="2743.755714285714" y="2140.27" />
+              <mxPoint x="2766.745714285714" y="2278.45" />
+              <mxPoint x="2800.2857142857138" y="2378.3" />
+              <mxPoint x="2804.7357142857136" y="2385.6400000000003" />
+              <mxPoint x="2808.875714285714" y="2391.9700000000003" />
+              <mxPoint x="2813.1557142857137" y="2397.83" />
+              <mxPoint x="2818.015714285714" y="2403.74" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-41" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-9" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.6434;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.3373;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-11" value="&lt;b&gt;Читает и записывает&lt;/b&gt;&lt;br&gt;&lt;i&gt;SQL / TLS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="13.29" y="-28.18" as="offset" />
+            <Array as="points">
+              <mxPoint x="1826.1857142857139" y="1002.62" />
+              <mxPoint x="1870.4857142857138" y="1010.24" />
+              <mxPoint x="1916.4657142857136" y="1018.14" />
+              <mxPoint x="1962.2957142857138" y="1026.02" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-42" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-10" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.2726;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.7568;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-11" value="&lt;b&gt;Читает и записывает&lt;/b&gt;&lt;br&gt;&lt;i&gt;SQL / TLS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-0.07" y="-32.57" as="offset" />
+            <Array as="points">
+              <mxPoint x="1849.8857142857137" y="1123.44" />
+              <mxPoint x="1889.3657142857137" y="1112.46" />
+              <mxPoint x="1929.2557142857138" y="1101.37" />
+              <mxPoint x="1968.605714285714" y="1090.43" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-43" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-13" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.4785;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.5309;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-14" value="&lt;b&gt;Читает и записывает&lt;/b&gt;&lt;br&gt;&lt;i&gt;SQL / TLS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="11.67" y="-23.86" as="offset" />
+            <Array as="points">
+              <mxPoint x="1834.7757142857138" y="1572.3200000000002" />
+              <mxPoint x="1875.105714285714" y="1570.99" />
+              <mxPoint x="1916.5457142857138" y="1569.63" />
+              <mxPoint x="1957.9157142857139" y="1568.27" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-44" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-19" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.5723;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.6002;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-20" value="&lt;b&gt;Читает и записывает&lt;/b&gt;&lt;br&gt;&lt;i&gt;SQL / TLS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3.48" y="-24.61" as="offset" />
+            <Array as="points">
+              <mxPoint x="1822.4057142857137" y="3185.07" />
+              <mxPoint x="1831.7257142857138" y="3185.73" />
+              <mxPoint x="1841.0257142857138" y="3186.32" />
+              <mxPoint x="1850.2257142857138" y="3186.85" />
+              <mxPoint x="1859.2857142857138" y="3187.3" />
+              <mxPoint x="1882.2457142857138" y="3188.33" />
+              <mxPoint x="1900.4857142857138" y="3188.98" />
+              <mxPoint x="1917.1357142857137" y="3189.11" />
+              <mxPoint x="1935.355714285714" y="3188.59" />
+              <mxPoint x="1958.2857142857138" y="3187.3" />
+              <mxPoint x="1966.8157142857137" y="3186.72" />
+              <mxPoint x="1974.3357142857137" y="3186.15" />
+              <mxPoint x="1981.5657142857137" y="3185.51" />
+              <mxPoint x="1989.1957142857136" y="3184.74" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-45" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-22" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.5865;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.5522;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-23" value="&lt;b&gt;Читает и записывает&lt;/b&gt;&lt;br&gt;&lt;i&gt;SQL / TLS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-8.53" y="-24.21" as="offset" />
+            <Array as="points">
+              <mxPoint x="1819.2057142857138" y="3457.26" />
+              <mxPoint x="1829.3257142857137" y="3458.17" />
+              <mxPoint x="1839.4257142857136" y="3458.98" />
+              <mxPoint x="1849.4357142857139" y="3459.7" />
+              <mxPoint x="1859.2857142857138" y="3460.3" />
+              <mxPoint x="1894.395714285714" y="3461.56" />
+              <mxPoint x="1929.0457142857138" y="3461.65" />
+              <mxPoint x="1962.8157142857137" y="3460.78" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-46" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-34" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.1092;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.8143;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-19" value="&lt;b&gt;Передаёт каталог и поставки&lt;/b&gt;&lt;br&gt;&lt;i&gt;HTTPS API&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-4.16" y="-39.62" as="offset" />
+            <Array as="points">
+              <mxPoint x="1471.395714285714" y="3271.35" />
+              <mxPoint x="1504.9757142857138" y="3257.79" />
+              <mxPoint x="1538.7757142857138" y="3244.15" />
+              <mxPoint x="1572.3057142857137" y="3230.61" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-47" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-34" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.9681;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.3549;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-22" value="&lt;b&gt;Передаёт данные устройств&lt;/b&gt;&lt;br&gt;&lt;i&gt;HTTPS API&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-4.78" y="-42.75" as="offset" />
+            <Array as="points">
+              <mxPoint x="1446.9057142857137" y="3377.36" />
+              <mxPoint x="1455.5357142857138" y="3380.81" />
+              <mxPoint x="1464.1657142857139" y="3384.14" />
+              <mxPoint x="1472.7657142857138" y="3387.31" />
+              <mxPoint x="1481.2857142857138" y="3390.3" />
+              <mxPoint x="1507.2957142857138" y="3398.71" />
+              <mxPoint x="1532.9557142857138" y="3406.22" />
+              <mxPoint x="1558.3757142857137" y="3412.97" />
+              <mxPoint x="1583.645714285714" y="3419.09" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-48" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-5" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=0.4997;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.5010;entryY=0.0000;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-25" value="&lt;b&gt;Публикует события домена&lt;/b&gt;&lt;br&gt;&lt;i&gt;Kafka / TLS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-31.29" y="2.66" as="offset" />
+            <Array as="points">
+              <mxPoint x="2110.2857142857138" y="2175.3199999999997" />
+              <mxPoint x="2110.2857142857138" y="2221.6400000000003" />
+              <mxPoint x="2110.2857142857138" y="2269.67" />
+              <mxPoint x="2110.2857142857138" y="2316.71" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-49" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-9" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=0.9646;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.2677;entryY=0.0000;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-25" value="&lt;b&gt;Изменения счетов и кредитов&lt;/b&gt;&lt;br&gt;&lt;i&gt;Kafka / TLS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-76.02" y="-505.85" as="offset" />
+            <Array as="points">
+              <mxPoint x="1788.3657142857137" y="1032.67" />
+              <mxPoint x="1796.0157142857138" y="1039.8" />
+              <mxPoint x="1803.3057142857137" y="1047.29" />
+              <mxPoint x="1810.105714285714" y="1055.13" />
+              <mxPoint x="1816.2857142857138" y="1063.3" />
+              <mxPoint x="1831.5757142857137" y="1091.19" />
+              <mxPoint x="1838.3857142857137" y="1115.9" />
+              <mxPoint x="1841.8357142857137" y="1139.85" />
+              <mxPoint x="1847.0957142857137" y="1165.5" />
+              <mxPoint x="1859.2857142857138" y="1195.3" />
+              <mxPoint x="1880.1157142857137" y="1226.32" />
+              <mxPoint x="1901.5657142857137" y="1247.95" />
+              <mxPoint x="1922.4857142857138" y="1266.76" />
+              <mxPoint x="1941.7757142857138" y="1289.35" />
+              <mxPoint x="1958.2857142857138" y="1322.3" />
+              <mxPoint x="1982.6157142857137" y="1461.53" />
+              <mxPoint x="1985.7357142857138" y="1645.95" />
+              <mxPoint x="1980.0457142857138" y="1845.95" />
+              <mxPoint x="1977.9357142857139" y="2031.94" />
+              <mxPoint x="1991.7857142857138" y="2174.3" />
+              <mxPoint x="2003.125714285714" y="2215.35" />
+              <mxPoint x="2017.105714285714" y="2255.15" />
+              <mxPoint x="2032.8657142857137" y="2293.1" />
+              <mxPoint x="2049.5357142857138" y="2328.6400000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-50" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-10" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=0.7089;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.2687;entryY=0.0000;entryDx=0;entryDy=0;startArrow=block;startFill=1;" target="EcS-RkK1EQF9on6ugeKv-25" value="&lt;b&gt;События finance.*&lt;/b&gt;&lt;br&gt;&lt;i&gt;Kafka / TLS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-76.59" y="-407.56" as="offset" />
+            <Array as="points">
+              <mxPoint x="1771.9357142857139" y="1256.45" />
+              <mxPoint x="1791.5057142857138" y="1286.3" />
+              <mxPoint x="1812.7257142857138" y="1317.2" />
+              <mxPoint x="1835.3857142857137" y="1348.44" />
+              <mxPoint x="1859.2857142857138" y="1379.3" />
+              <mxPoint x="1882.4457142857136" y="1403.42" />
+              <mxPoint x="1904.0857142857137" y="1420.1399999999999" />
+              <mxPoint x="1924.0357142857138" y="1435.1" />
+              <mxPoint x="1942.1557142857137" y="1453.94" />
+              <mxPoint x="1958.2857142857138" y="1482.3" />
+              <mxPoint x="1981.7257142857138" y="1594.1799999999998" />
+              <mxPoint x="1986.0857142857137" y="1743.83" />
+              <mxPoint x="1982.0657142857137" y="1906.75" />
+              <mxPoint x="1980.3857142857137" y="2058.41" />
+              <mxPoint x="1991.7857142857138" y="2174.3" />
+              <mxPoint x="2003.2757142857138" y="2215.3199999999997" />
+              <mxPoint x="2017.3357142857137" y="2255.09" />
+              <mxPoint x="2033.1157142857137" y="2293.0299999999997" />
+              <mxPoint x="2049.7757142857135" y="2328.5699999999997" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-51" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-13" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.8846;exitDx=0;exitDy=0;entryX=0.2739;entryY=0.0000;entryDx=0;entryDy=0;startArrow=block;startFill=1;" target="EcS-RkK1EQF9on6ugeKv-25" value="&lt;b&gt;События corporate.*&lt;/b&gt;&lt;br&gt;&lt;i&gt;Kafka / TLS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-72.02" y="-315.85" as="offset" />
+            <Array as="points">
+              <mxPoint x="1837.145714285714" y="1653.38" />
+              <mxPoint x="1871.4857142857138" y="1681.62" />
+              <mxPoint x="1904.2457142857138" y="1713.79" />
+              <mxPoint x="1933.7357142857138" y="1749.98" />
+              <mxPoint x="1958.2857142857138" y="1790.3" />
+              <mxPoint x="1974.5857142857137" y="1851.61" />
+              <mxPoint x="1980.6157142857137" y="1934.59" />
+              <mxPoint x="1981.8457142857137" y="2025.32" />
+              <mxPoint x="1983.7457142857138" y="2109.8599999999997" />
+              <mxPoint x="1991.7857142857138" y="2174.3" />
+              <mxPoint x="2003.9357142857139" y="2215.23" />
+              <mxPoint x="2018.375714285714" y="2254.98" />
+              <mxPoint x="2034.3057142857137" y="2292.96" />
+              <mxPoint x="2050.9257142857136" y="2328.56" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-52" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-19" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.2697;exitDx=0;exitDy=0;entryX=0.3542;entryY=1.0000;entryDx=0;entryDy=0;startArrow=block;startFill=1;" target="EcS-RkK1EQF9on6ugeKv-25" value="&lt;b&gt;События pharma.*&lt;/b&gt;&lt;br&gt;&lt;i&gt;Kafka / TLS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-78.12" y="161.49" as="offset" />
+            <Array as="points">
+              <mxPoint x="1851.2557142857138" y="3129.99" />
+              <mxPoint x="1881.2157142857136" y="3114.18" />
+              <mxPoint x="1909.5957142857137" y="3095.14" />
+              <mxPoint x="1935.5557142857137" y="3072.35" />
+              <mxPoint x="1958.2857142857138" y="3045.3" />
+              <mxPoint x="1981.9257142857136" y="3000.11" />
+              <mxPoint x="1988.7757142857138" y="2959.65" />
+              <mxPoint x="1987.1557142857137" y="2919.49" />
+              <mxPoint x="1985.3857142857137" y="2875.18" />
+              <mxPoint x="1991.7857142857138" y="2822.3" />
+              <mxPoint x="2008.5257142857138" y="2753.96" />
+              <mxPoint x="2027.2357142857138" y="2686.2799999999997" />
+              <mxPoint x="2046.6657142857139" y="2621.76" />
+              <mxPoint x="2065.5357142857138" y="2562.87" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-53" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-22" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.3029;exitDx=0;exitDy=0;entryX=0.569;entryY=1.003;entryDx=0;entryDy=0;startArrow=block;startFill=1;entryPerimeter=0;" target="EcS-RkK1EQF9on6ugeKv-25" value="&lt;b&gt;События equipment.*&lt;/b&gt;&lt;br&gt;&lt;i&gt;Kafka / TLS&lt;/i&gt;">
+          <mxGeometry relative="1" x="0.013" y="-5.57" as="geometry">
+            <mxPoint x="-79.44" y="296.58" as="offset" />
+            <Array as="points">
+              <mxPoint x="1848.4557142857138" y="3405.09" />
+              <mxPoint x="1879.6357142857137" y="3389.49" />
+              <mxPoint x="1909.0357142857138" y="3370.22" />
+              <mxPoint x="1935.6157142857137" y="3346.68" />
+              <mxPoint x="1980" y="3320" />
+              <mxPoint x="2024.08" y="3240" />
+              <mxPoint x="2024.08" y="3130" />
+              <mxPoint x="2020" y="3017.24" />
+              <mxPoint x="2020" y="2906.74" />
+              <mxPoint x="2020" y="2830" />
+              <mxPoint x="2043.35" y="2760" />
+              <mxPoint x="2060" y="2700" />
+              <mxPoint x="2090" y="2640" />
+              <mxPoint x="2120" y="2570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-54" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-25" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=0.2834;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.8702;entryY=0.0000;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-16" value="&lt;b&gt;Доставляет задания medical.* с ID исследования&lt;/b&gt;&lt;br&gt;&lt;i&gt;Закрытые топики / ACL&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-31.83" y="-64.22" as="offset" />
+            <Array as="points">
+              <mxPoint x="2050.705714285714" y="2534.1" />
+              <mxPoint x="2029.7957142857138" y="2566.25" />
+              <mxPoint x="2007.0757142857137" y="2599.54" />
+              <mxPoint x="1983.0557142857137" y="2632.66" />
+              <mxPoint x="1958.2857142857138" y="2664.3" />
+              <mxPoint x="1924.1157142857137" y="2704.1800000000003" />
+              <mxPoint x="1888.645714285714" y="2742.6" />
+              <mxPoint x="1853.0357142857138" y="2778.9300000000003" />
+              <mxPoint x="1818.4857142857138" y="2812.5299999999997" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-55" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-16" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=0.5717;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.2122;entryY=1.0000;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-5" value="&lt;b&gt;Данные и результаты заданий&lt;/b&gt;&lt;br&gt;&lt;i&gt;HTTPS / сервисная авторизация&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="65.7" y="-253.91" as="offset" />
+            <Array as="points">
+              <mxPoint x="1742.9057142857137" y="2783.52" />
+              <mxPoint x="1764.4357142857139" y="2703.83" />
+              <mxPoint x="1791.2657142857138" y="2614.91" />
+              <mxPoint x="1823.0057142857138" y="2522.73" />
+              <mxPoint x="1859.2857142857138" y="2433.3" />
+              <mxPoint x="1884.5657142857137" y="2379.31" />
+              <mxPoint x="1906.9257142857136" y="2337.59" />
+              <mxPoint x="1929.8857142857137" y="2300.85" />
+              <mxPoint x="1956.9957142857138" y="2261.84" />
+              <mxPoint x="1991.7857142857138" y="2213.3" />
+              <mxPoint x="2003.3357142857137" y="2197.4700000000003" />
+              <mxPoint x="2014.7657142857138" y="2182.4700000000003" />
+              <mxPoint x="2026.2457142857138" y="2168" />
+              <mxPoint x="2037.9857142857138" y="2153.74" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-56" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-16" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=0.5659;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.7431;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-25" value="&lt;b&gt;Завершение задания (ID)&lt;/b&gt;&lt;br&gt;&lt;i&gt;Kafka / TLS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="91.7" y="-148.47" as="offset" />
+            <Array as="points">
+              <mxPoint x="1739.3157142857137" y="2798.21" />
+              <mxPoint x="1758.6957142857136" y="2740.17" />
+              <mxPoint x="1784.6957142857136" y="2678.85" />
+              <mxPoint x="1817.9957142857138" y="2618.98" />
+              <mxPoint x="1859.2857142857138" y="2565.3" />
+              <mxPoint x="1886.0757142857137" y="2539.83" />
+              <mxPoint x="1915.0857142857137" y="2517.91" />
+              <mxPoint x="1945.605714285714" y="2499.17" />
+              <mxPoint x="1976.8657142857137" y="2483.2200000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-57" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-25" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.4985;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.4999;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-27" value="&lt;b&gt;Разрешённые аналитические топики&lt;/b&gt;&lt;br&gt;&lt;i&gt;Kafka / ACL&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="7.39" y="-29.91" as="offset" />
+            <Array as="points">
+              <mxPoint x="2245.755714285714" y="2436.3" />
+              <mxPoint x="2288.5557142857137" y="2436.3" />
+              <mxPoint x="2331.9457142857136" y="2436.3" />
+              <mxPoint x="2374.585714285714" y="2436.3" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-58" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-27" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.1833;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.7767;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-26" value="&lt;b&gt;Проверяет версии и поля&lt;/b&gt;&lt;br&gt;&lt;i&gt;HTTPS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="8.94" y="-41.42" as="offset" />
+            <Array as="points">
+              <mxPoint x="2616.495714285714" y="2382.34" />
+              <mxPoint x="2626.705714285714" y="2377.55" />
+              <mxPoint x="2636.9457142857136" y="2372.92" />
+              <mxPoint x="2647.165714285714" y="2368.48" />
+              <mxPoint x="2657.2857142857138" y="2364.3" />
+              <mxPoint x="2684.925714285714" y="2353.62" />
+              <mxPoint x="2712.3157142857135" y="2343.84" />
+              <mxPoint x="2739.505714285714" y="2334.83" />
+              <mxPoint x="2766.515714285714" y="2326.46" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-59" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-27" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.9864;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.1171;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-28" value="&lt;b&gt;Обновляет витрины&lt;/b&gt;&lt;br&gt;&lt;i&gt;SQL / TLS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="9.87" y="-48.62" as="offset" />
+            <Array as="points">
+              <mxPoint x="2616.6357142857137" y="2519.3199999999997" />
+              <mxPoint x="2626.765714285714" y="2526.84" />
+              <mxPoint x="2636.955714285714" y="2534.23" />
+              <mxPoint x="2647.1457142857134" y="2541.4" />
+              <mxPoint x="2657.2857142857138" y="2548.3" />
+              <mxPoint x="2684.5757142857137" y="2566.02" />
+              <mxPoint x="2711.8657142857137" y="2582.83" />
+              <mxPoint x="2739.1057142857135" y="2598.84" />
+              <mxPoint x="2766.245714285714" y="2614.1400000000003" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-60" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-33" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.4417;entryY=1.0000;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-29" value="&lt;b&gt;Выбирает срезы и создаёт отчёты&lt;/b&gt;&lt;br&gt;&lt;i&gt;HTTPS&lt;/i&gt;">
+          <mxGeometry relative="1" x="-0.3161" y="-52.19" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="2390" y="3470" />
+              <mxPoint x="2410" y="3320" />
+              <mxPoint x="2448.3857142857137" y="3026.07" />
+              <mxPoint x="2482.665714285714" y="2873.91" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-61" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-29" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=0.8727;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.3315;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-30" value="&lt;b&gt;Проверяет вход и роли&lt;/b&gt;&lt;br&gt;&lt;i&gt;OIDC / HTTPS&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="48.51" y="-52.93" as="offset" />
+            <Array as="points">
+              <mxPoint x="2599.0957142857137" y="2602.29" />
+              <mxPoint x="2609.2357142857136" y="2590.0699999999997" />
+              <mxPoint x="2618.9457142857136" y="2577.44" />
+              <mxPoint x="2628.0257142857135" y="2564.48" />
+              <mxPoint x="2636.2857142857138" y="2551.3" />
+              <mxPoint x="2641.995714285714" y="2536.46" />
+              <mxPoint x="2643.3557142857135" y="2522.83" />
+              <mxPoint x="2643.955714285714" y="2510.21" />
+              <mxPoint x="2647.3957142857134" y="2498.42" />
+              <mxPoint x="2657.2857142857138" y="2487.3" />
+              <mxPoint x="2684.005714285714" y="2471.0699999999997" />
+              <mxPoint x="2712.435714285714" y="2460.7799999999997" />
+              <mxPoint x="2742.005714285714" y="2455.48" />
+              <mxPoint x="2772.1457142857134" y="2454.23" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EcS-RkK1EQF9on6ugeKv-62" edge="1" parent="1" source="EcS-RkK1EQF9on6ugeKv-29" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.5737;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.5622;entryDx=0;entryDy=0;" target="EcS-RkK1EQF9on6ugeKv-28" value="&lt;b&gt;Читает доступные наборы&lt;/b&gt;&lt;br&gt;&lt;i&gt;SQL / TLS; read-only&lt;/i&gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="4.16" y="-38.28" as="offset" />
+            <Array as="points">
+              <mxPoint x="2623.265714285714" y="2693.21" />
+              <mxPoint x="2631.8657142857137" y="2693.83" />
+              <mxPoint x="2640.435714285714" y="2694.3900000000003" />
+              <mxPoint x="2648.925714285714" y="2694.88" />
+              <mxPoint x="2657.2857142857138" y="2695.3" />
+              <mxPoint x="2680.475714285714" y="2696.24" />
+              <mxPoint x="2698.875714285714" y="2696.66" />
+              <mxPoint x="2715.685714285714" y="2696.6099999999997" />
+              <mxPoint x="2734.0957142857137" y="2696.1400000000003" />
+              <mxPoint x="2757.2857142857138" y="2695.3" />
+              <mxPoint x="2764.835714285714" y="2695" />
+              <mxPoint x="2771.3557142857135" y="2694.73" />
+              <mxPoint x="2777.585714285714" y="2694.42" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

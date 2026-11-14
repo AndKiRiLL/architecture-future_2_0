@@ -1,0 +1,134 @@
+{
+  "basePath": "/",
+  "baseUrl": "",
+  "editUrl": "",
+  "logoFile": "/logo.svg",
+  "jsFile": "",
+  "toggles": {
+    "showSearch": true,
+    "showChart": true,
+    "showTagFilter": true,
+    "showQuadrantList": true,
+    "showEmptyRings": false
+  },
+  "sections": [
+    "radar",
+    "tags",
+    "list"
+  ],
+  "colors": {
+    "foreground": "#FFFFFF",
+    "background": "#10324D",
+    "highlight": "#F5C451",
+    "content": "#FFFFFF",
+    "text": "#243B53",
+    "link": "#1769AA",
+    "border": "rgba(255, 255, 255, 0.1)",
+    "tag": "rgba(255, 255, 255, 0.1)"
+  },
+  "quadrants": [
+    {
+      "id": "languages-and-frameworks",
+      "title": "Языки и фреймворки",
+      "description": "Используемые языки и средства разработки.",
+      "color": "#388E3C"
+    },
+    {
+      "id": "tools",
+      "title": "Инструменты",
+      "description": "Хранилища, интеграционные инструменты и автоматизация.",
+      "color": "#1976D2"
+    },
+    {
+      "id": "platforms-and-operations",
+      "title": "Платформы",
+      "description": "Облачная инфраструктура и размещение доменов.",
+      "color": "#7B1FA2"
+    },
+    {
+      "id": "methods-and-patterns",
+      "title": "Методы и архитектурные паттерны",
+      "description": "Архитектурные подходы и практики работы с данными.",
+      "color": "#E07B39"
+    }
+  ],
+  "rings": [
+    {
+      "id": "adopt",
+      "title": "Adopt",
+      "description": "Сохранять и использовать существующий проверенный стек.",
+      "color": "#588157",
+      "radius": 0.5,
+      "strokeWidth": 5
+    },
+    {
+      "id": "trial",
+      "title": "Trial",
+      "description": "Ограниченный пилот; промышленный результат новых технологий ещё должен быть подтверждён.",
+      "color": "#457b9d",
+      "radius": 0.69,
+      "strokeWidth": 3
+    },
+    {
+      "id": "assess",
+      "title": "Assess",
+      "description": "Предварительно оценить применимость и риски.",
+      "color": "#bc6c25",
+      "radius": 0.85,
+      "strokeWidth": 2
+    },
+    {
+      "id": "hold",
+      "title": "Hold",
+      "description": "Не применять в новых решениях; действующие системы выводятся поэтапно.",
+      "color": "#d62828",
+      "radius": 1,
+      "strokeWidth": 0.75
+    }
+  ],
+  "flags": {
+    "new": {
+      "color": "#F5C451",
+      "title": "Новое в версии",
+      "titleShort": "N",
+      "description": "Добавлено в эту версию радара"
+    },
+    "changed": {
+      "color": "#64B5F6",
+      "title": "Изменено",
+      "titleShort": "C",
+      "description": "Статус или описание изменены"
+    },
+    "default": {
+      "description": "Без изменений"
+    }
+  },
+  "chart": {
+    "size": 1000,
+    "blipSize": 10
+  },
+  "social": [],
+  "imprint": "",
+  "labels": {
+    "title": "Техрадар «Будущее 2.0»",
+    "imprint": "",
+    "quadrant": "Категория",
+    "quadrantOverview": "Подробнее",
+    "zoomIn": "Приблизить",
+    "filterByTag": "Фильтр по тегу",
+    "footer": "Учебный проект «Будущее 2.0». Генератор — AOE Technology Radar (open source).",
+    "notUpdated": "Позиция давно не пересматривалась.",
+    "notFound": "Страница не найдена",
+    "pageAbout": "О радаре и запуск",
+    "pageOverview": "Все технологии",
+    "pageSearch": "Поиск",
+    "searchPlaceholder": "Название технологии или паттерна",
+    "metaDescription": "Целевой технологический стек и архитектурные паттерны компании «Будущее 2.0» на три года."
+  },
+  "fuzzySearch": {
+    "threshold": 0.4,
+    "distance": 600,
+    "ignoreLocation": false,
+    "includeScore": true
+  }
+}

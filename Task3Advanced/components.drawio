@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" compressed="false">
+  <diagram id="components" name="C4 Component">
+    <mxGraphModel dx="1800" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Будущее 2.0 — C4 Component — обработка аналитических событий" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#111111;whiteSpace=wrap;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="10.00" y="0.00" width="2456.00" height="38.00" as="geometry" />
+        </mxCell>
+        <mxCell id="processor" value="&lt;b&gt;Обработка аналитических событий — Python consumers&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container]&lt;/span&gt;" style="rounded=0;html=1;whiteSpace=wrap;fillColor=none;strokeColor=#666666;fontColor=#111111;dashed=1;dashPattern=7 5;align=center;verticalAlign=top;spacingTop=6;fontSize=14;container=1;collapsible=0;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="380.50" y="205.30" width="1750.00" height="203.00" as="geometry" />
+        </mxCell>
+        <mxCell id="events" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Платформа событий&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: Kafka]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Разрешённые аналитические топики&lt;/div&gt;" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#438DD5;strokeColor=#3C7FC0;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="384.00" y="79.30" width="189.34" height="110.11" as="geometry" />
+        </mxCell>
+        <mxCell id="schemas" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Каталог схем&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: Schema Registry]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Версии контрактов&lt;/div&gt;" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#438DD5;strokeColor=#3C7FC0;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1552.50" y="424.80" width="162.67" height="85.19" as="geometry" />
+        </mxCell>
+        <mxCell id="marts" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Аналитические витрины&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: ClickHouse]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Доменные наборы и общие показатели&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#438DD5;strokeColor=#3C7FC0;strokeWidth=1;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="2254.76" y="249.36" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="dlq" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;DLQ аналитического потока&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Container: Топики в той же Kafka]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Ошибки без медицинского содержимого&lt;/div&gt;" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#438DD5;strokeColor=#3C7FC0;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1929.50" y="520.80" width="171.13" height="145.03" as="geometry" />
+        </mxCell>
+        <mxCell id="engineer" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Ответственный за данные&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Person]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Разбирает ошибки и разрешает повторную обработку&lt;/div&gt;" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#08427B;strokeColor=#073B6F;fontColor=#FFFFFF;fontSize=13;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="7.00" y="239.30" width="186.31" height="170.44" as="geometry" />
+        </mxCell>
+        <mxCell id="consumer" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Приём событий&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Component: Kafka consumer]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Читает только разрешённые топики по ACL&lt;/div&gt;" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#85BBF0;strokeColor=#78A8D8;fontColor=#000000;fontSize=13;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="processor">
+          <mxGeometry x="383.50" y="60.00" width="200.95" height="117.78" as="geometry" />
+        </mxCell>
+        <mxCell id="validator" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Проверка контракта&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Component: Python]&lt;/span&gt;&lt;br&gt;&lt;br&gt;ФЛК: схема, версия, типы и разрешённые поля&lt;/div&gt;" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#85BBF0;strokeColor=#78A8D8;fontColor=#000000;fontSize=13;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="processor">
+          <mxGeometry x="758.50" y="51.00" width="194.14" height="136.41" as="geometry" />
+        </mxCell>
+        <mxCell id="transformer" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Подготовка фактов&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Component: Python]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Потоковые преобразования: поля и единицы&lt;/div&gt;" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#85BBF0;strokeColor=#78A8D8;fontColor=#000000;fontSize=13;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="processor">
+          <mxGeometry x="1152.50" y="73.50" width="202.20" height="101.48" as="geometry" />
+        </mxCell>
+        <mxCell id="writer" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Запись витрин&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Component: Python]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Дедупликация по event_id; обновление по версии сущности&lt;/div&gt;" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#85BBF0;strokeColor=#78A8D8;fontColor=#000000;fontSize=13;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="processor">
+          <mxGeometry x="1535.00" y="65.00" width="198.58" height="117.78" as="geometry" />
+        </mxCell>
+        <mxCell id="replay" value="&lt;div style=&quot;line-height:1.2&quot;&gt;&lt;b&gt;Повторная обработка&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px&quot;&gt;[Component: Python worker]&lt;/span&gt;&lt;br&gt;&lt;br&gt;Повторяет события после исправления причины ошибки&lt;/div&gt;" style="rounded=1;arcSize=8;html=1;whiteSpace=wrap;fillColor=#85BBF0;strokeColor=#78A8D8;fontColor=#000000;fontSize=13;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="processor">
+          <mxGeometry x="16.00" y="51.00" width="164.22" height="136.41" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_0" value="&lt;b&gt;Передаёт события&lt;/b&gt;&lt;br&gt;&lt;i&gt;Kafka / TLS&lt;/i&gt;" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.8375;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="events" target="consumer">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="603.55" y="184.38" />
+              <mxPoint x="635.79" y="198.45" />
+              <mxPoint x="668.90" y="213.47" />
+              <mxPoint x="701.95" y="229.17" />
+              <mxPoint x="734.00" y="245.30" />
+              <mxPoint x="740.40" y="248.64" />
+              <mxPoint x="745.87" y="251.53" />
+              <mxPoint x="751.04" y="254.34" />
+              <mxPoint x="756.54" y="257.43" />
+            </Array>
+            <mxPoint x="-0.52" y="-44.25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_1" value="&lt;b&gt;Передаёт сообщение&lt;/b&gt;&lt;br&gt;&lt;i&gt;Вызов функции&lt;/i&gt;" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.5009;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.4985;entryDx=0;entryDy=0;" edge="1" parent="1" source="consumer" target="validator">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="997.85" y="324.30" />
+              <mxPoint x="1031.30" y="324.30" />
+              <mxPoint x="1064.91" y="324.30" />
+              <mxPoint x="1098.24" y="324.30" />
+            </Array>
+            <mxPoint x="2.03" y="-22.89" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_2" value="&lt;b&gt;Получает контракт&lt;/b&gt;&lt;br&gt;&lt;i&gt;HTTPS&lt;/i&gt;" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.7530;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.1256;entryDx=0;entryDy=0;" edge="1" parent="1" source="validator" target="schemas">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1374.85" y="374.08" />
+              <mxPoint x="1418.42" y="389.81" />
+              <mxPoint x="1462.31" y="405.66" />
+              <mxPoint x="1505.00" y="421.07" />
+            </Array>
+            <mxPoint x="-3.07" y="-37.83" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_3" value="&lt;b&gt;Передаёт проверенное событие&lt;/b&gt;&lt;br&gt;&lt;i&gt;Вызов функции&lt;/i&gt;" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.5074;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.4842;entryDx=0;entryDy=0;" edge="1" parent="1" source="validator" target="transformer">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1370.43" y="325.98" />
+              <mxPoint x="1409.15" y="326.47" />
+              <mxPoint x="1448.40" y="326.97" />
+              <mxPoint x="1487.30" y="327.46" />
+            </Array>
+            <mxPoint x="6.91" y="-30.33" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_4" value="&lt;b&gt;Передаёт подготовленные данные&lt;/b&gt;&lt;br&gt;&lt;i&gt;Вызов функции&lt;/i&gt;" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.4976;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.5009;entryDx=0;entryDy=0;" edge="1" parent="1" source="transformer" target="writer">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1769.05" y="329.30" />
+              <mxPoint x="1803.80" y="329.30" />
+              <mxPoint x="1838.78" y="329.30" />
+              <mxPoint x="1873.47" y="329.30" />
+            </Array>
+            <mxPoint x="2.81" y="-29.91" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_5" value="&lt;b&gt;Записывает до подтверждения Kafka offset&lt;/b&gt;&lt;br&gt;&lt;i&gt;SQL / TLS&lt;/i&gt;" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.5009;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.4996;entryDx=0;entryDy=0;" edge="1" parent="1" source="writer" target="marts">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2148.21" y="329.30" />
+              <mxPoint x="2182.21" y="329.30" />
+              <mxPoint x="2216.19" y="329.30" />
+              <mxPoint x="2249.58" y="329.30" />
+            </Array>
+            <mxPoint x="5.55" y="-29.91" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_6" value="&lt;b&gt;Сохраняет ID, код ошибки и ссылку на исходное событие&lt;/b&gt;&lt;br&gt;&lt;i&gt;Kafka / TLS&lt;/i&gt;" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=0.7555;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.6440;entryDx=0;entryDy=0;" edge="1" parent="1" source="validator" target="dlq">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1321.42" y="435.64" />
+              <mxPoint x="1365.11" y="481.99" />
+              <mxPoint x="1415.67" y="527.35" />
+              <mxPoint x="1471.99" y="567.52" />
+              <mxPoint x="1533.00" y="598.30" />
+              <mxPoint x="1614.15" y="621.42" />
+              <mxPoint x="1697.78" y="631.38" />
+              <mxPoint x="1779.69" y="631.38" />
+              <mxPoint x="1855.65" y="624.59" />
+            </Array>
+            <mxPoint x="68.69" y="-46.27" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_7" value="&lt;b&gt;Сохраняет метаданные ошибки преобразования&lt;/b&gt;&lt;br&gt;&lt;i&gt;Kafka / TLS&lt;/i&gt;" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=0.8637;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.0620;entryDx=0;entryDy=0;" edge="1" parent="1" source="transformer" target="dlq">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1747.92" y="407.95" />
+              <mxPoint x="1791.54" y="438.33" />
+              <mxPoint x="1836.53" y="469.67" />
+              <mxPoint x="1880.93" y="500.61" />
+            </Array>
+            <mxPoint x="9.10" y="-69.46" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_8" value="&lt;b&gt;После ограниченных повторов сохраняет ошибку&lt;/b&gt;&lt;br&gt;&lt;i&gt;Kafka / TLS&lt;/i&gt;" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=0.5011;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.4996;entryY=0.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="writer" target="dlq">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2015.00" y="412.45" />
+              <mxPoint x="2015.00" y="437.08" />
+              <mxPoint x="2015.00" y="462.15" />
+              <mxPoint x="2015.00" y="487.38" />
+            </Array>
+            <mxPoint x="-38.10" y="2.61" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_9" value="&lt;b&gt;Разрешает повтор после устранения причины&lt;/b&gt;&lt;br&gt;&lt;i&gt;Служебный запуск&lt;/i&gt;" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.4987;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.4985;entryDx=0;entryDy=0;" edge="1" parent="1" source="engineer" target="replay">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="231.53" y="324.30" />
+              <mxPoint x="271.44" y="324.30" />
+              <mxPoint x="311.66" y="324.30" />
+              <mxPoint x="350.99" y="324.30" />
+            </Array>
+            <mxPoint x="-1.90" y="-29.91" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_10" value="&lt;b&gt;Передаёт события для разбора&lt;/b&gt;&lt;br&gt;&lt;i&gt;Kafka / TLS&lt;/i&gt;" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=0.0000;exitY=0.7751;exitDx=0;exitDy=0;entryX=0.7137;entryY=1.0000;entryDx=0;entryDy=0;" edge="1" parent="1" source="dlq" target="replay">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1879.59" y="652.83" />
+              <mxPoint x="1823.06" y="671.98" />
+              <mxPoint x="1761.90" y="688.44" />
+              <mxPoint x="1698.43" y="699.96" />
+              <mxPoint x="1635.00" y="704.30" />
+              <mxPoint x="1258.51" y="704.30" />
+              <mxPoint x="1030.14" y="704.30" />
+              <mxPoint x="912.88" y="704.30" />
+              <mxPoint x="869.67" y="704.30" />
+              <mxPoint x="863.50" y="704.30" />
+              <mxPoint x="765.07" y="683.14" />
+              <mxPoint x="680.33" y="628.64" />
+              <mxPoint x="609.82" y="554.27" />
+              <mxPoint x="554.09" y="473.52" />
+            </Array>
+            <mxPoint x="77.89" y="-22.89" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_11" value="&lt;b&gt;Повторяет обработку по ссылке на исходное событие&lt;/b&gt;&lt;br&gt;&lt;i&gt;Внутренний вызов&lt;/i&gt;" style="html=1;whiteSpace=wrap;rounded=1;curved=1;endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=1.2;fontColor=#555555;fontSize=11;labelBackgroundColor=#FFFFFF;labelWidth=150;exitX=1.0000;exitY=0.4985;exitDx=0;exitDy=0;entryX=0.0000;entryY=0.5009;entryDx=0;entryDy=0;" edge="1" parent="1" source="replay" target="consumer">
+          <mxGeometry x="0" y="0" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="597.89" y="324.30" />
+              <mxPoint x="636.93" y="324.30" />
+              <mxPoint x="676.98" y="324.30" />
+              <mxPoint x="716.95" y="324.30" />
+            </Array>
+            <mxPoint x="10.22" y="-36.92" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="elem_GMN25" value="Повторная доставка&lt;br&gt;допустима: повтор одного&lt;br&gt;event_id&lt;br&gt;не меняет итог. Версия&lt;br&gt;сущности защищает от&lt;br&gt;старых событий.&lt;br&gt;Агрегаты считаются из&lt;br&gt;дедуплицированных&lt;br&gt;фактов." style="shape=note;html=1;whiteSpace=wrap;size=15;fillColor=#FFFFDD;strokeColor=#999977;fontColor=#111111;fontSize=13;align=left;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1909.00" y="36.36" width="202.79" height="157.06" as="geometry" />
+        </mxCell>
+        <mxCell id="elem_GMN28" value="Медицинские топики medical.* закрыты для аналитики правами доступа Kafka (ACL).&lt;br&gt;&lt;br&gt;Карты, истории болезни, результаты исследований и снимки в аналитический поток не передаются." style="shape=note;html=1;whiteSpace=wrap;size=15;fillColor=#FFFFDD;strokeColor=#999977;fontColor=#111111;fontSize=13;align=left;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="60" width="280" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="component_scope" vertex="1" parent="1" value="&lt;b&gt;Почему детализирован один контейнер&lt;/b&gt;&lt;br&gt;&lt;br&gt;Количество компонентных диаграмм и перечень контейнеров для детализации в ТЗ не заданы. Поэтому для компонентного уровня выбран один ключевой контейнер — «Обработка аналитических событий»: он отвечает за подготовку данных для витрин и связан с переходом к событийной архитектуре.&lt;br&gt;&lt;br&gt;Здесь раскрыт потоковый путь. Пакетные преобразования внутри доменных сервисов выполняют задания на Python или Java — по стеку домена. После обработки разрешённые события поступают в Kafka. ФЛК и бизнес-правила операций остаются у доменов. Остальные контейнеры показаны на общей схеме." style="rounded=1;arcSize=5;html=1;whiteSpace=wrap;fillColor=#F5F5F5;strokeColor=#999999;fontColor=#111111;fontSize=14;align=left;verticalAlign=middle;spacing=14;">
+          <mxGeometry as="geometry" x="380" y="770" width="1750" height="160" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
